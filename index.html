@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sakib's IT - Homepage</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> 
+          <style type="text/css" media="screen">@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);</style>
+          <style type="text/css" media="screen">@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);</style>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  section {
+    
+    height: 100vh;
+    display: flex;
+    background-image: url(back.webp);
+  }
+  section .title {
+    max-width: 60%;
+    width: 100%;
+    align-self: center;
+    transform: translateY(-50px);
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
+  section .title span {
+    display: inline-block;
+    font-size: 5vw;
+    color: #efefef;
+    width: 100%;
+    text-transform: uppercase;
+    transform: translateX(-100%);
+    animation: byBottom 1s ease both;
+    font-weight: 600;
+    letter-spacing: 0.25vw;
+  }
+  section .title span:last-child {
+    font-size: 1.5rem;
+    animation: byBottom 1s 0.25s ease both;
+  }
+  section .title span a {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #f7ca18;
+  }
+  section .title span a::after {
+    content: "";
+    height: 2px;
+    background-color: #f7ca18;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    animation: linkAfter 0.5s 1s ease both;
+  }
+  @-moz-keyframes pop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes pop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-o-keyframes pop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes pop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-moz-keyframes byBottom {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes byBottom {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-o-keyframes byBottom {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes byBottom {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-moz-keyframes linkAfter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30px;
+    }
+  }
+  @-webkit-keyframes linkAfter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30px;
+    }
+  }
+  @-o-keyframes linkAfter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30px;
+    }
+  }
+  @keyframes linkAfter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30px;
+    }
+  }
+  .contain {
+    width: 100%;
+    height: 100%;
+    padding: 0px 8%;
+    margin-bottom: 20px;
+  }
+  
+  .contain h1 {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .contain h1::after {
+    content: '';
+    background: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .row1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+  }
+  
+  .service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef7;
+  }
+  
+  .service h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .service:hover {
+    background: #303ef7;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .service:hover i {
+    color: #fff;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+      text-decoration: none;
+      outline: none;
+  }
+  
+  a,
+  a:active,
+  a:focus {
+      color: #6f6f6f;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      -ms-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -webkit-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-duration: .2s;
+      -ms-transition-duration: .2s;
+      -moz-transition-duration: .2s;
+      -webkit-transition-duration: .2s;
+      -o-transition-duration: .2s;
+  }
+  
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  img {
+max-width: 100%;
+height: auto;
+}
+  section {
+      padding: 60px 0;
+      min-height: 100vh;
+  }
+.footer {
+padding: 100px 0px 0px;
+background-color: #030a16;
+position: relative;
+}
+
+
+.footer .widget1 p {
+font-size: 16px;
+color: rgba(255, 255, 255, .6);
+margin-top: 26px;
+}
+
+.footer .socialLinks {
+margin-top: 28px;
+}
+
+.socialLinks ul li {
+display: inline-block;
+}
+
+
+.socialLinks ul li a i {
+display: block;
+margin: 0 2px;
+width: 40px;
+height: 40px;
+background: #fafafa;
+border-radius: 50%;
+text-align: center;
+margin-right: 5px;
+line-height: 40px;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.socialLinks ul li a .fa-facebook-f {
+color: #4267b2;
+}
+
+.socialLinks ul li a .fa-twitter {
+color: #1da1f2;
+}
+
+.socialLinks ul li a .fa-google-plus-g {
+color: #dd5044;
+}
+
+.socialLinks ul li a .fa-linkedin-in {
+color: #0177b5;
+}
+
+
+.socialLinks ul li a:hover i {
+color: #fff;
+}
+
+.socialLinks ul li a:hover .fa-facebook-f {
+background: #4267b2;
+}
+
+.socialLinks ul li a:hover .fa-twitter {
+background: #1da1f2;
+}
+
+.socialLinks ul li a:hover .fa-google-plus-g {
+background: #dd5044;
+}
+
+.socialLinks ul li a:hover .fa-linkedin-in {
+background: #0177b5;
+}
+footer .logo {
+max-width: 200px;
+}
+
+.footer h5 {
+font-weight: 500;
+margin-bottom: 28px;
+text-transform: capitalize;
+font-weight: 600;
+color: #fff;
+font-size: 21px
+}
+
+.footer .widget2 .media img {
+margin-right: 20px;
+max-width: 100px;
+}
+.footer .widget2 .media p {
+font-size: 16px;
+color: rgba(255, 255, 255, .8);;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+font-weight: 600;
+line-height: 26px;
+}
+
+.footer .widget2 .media span {
+font-size: 12px;
+color: #ffb606;
+text-transform: uppercase;
+margin-top: 15px;
+display: block;
+}
+
+.footer .widget2 .media {
+margin-bottom: 20px;
+}
+
+.footer .widget3 ul li a,
+.footer .widget4 ul li a {
+font-size: 16px;
+color: rgba(255, 255, 255, .6);;
+text-transform: capitalize;
+margin-bottom: 13px;
+display: block;
+}
+
+.footer .widget3 ul li a:hover,
+.footer .widget4 ul li a:hover,
+.footer .widget2 a:hover p {
+color: #ffb606;
+}
+
+.footer .widget3 h5 {
+margin-bottom: 22px;
+font-weight: 600;
+color: #fff;
+font-size: 21px;
+line-height: 32px;
+}
+
+.footer .widget4 h5 {
+margin-bottom: 22px;
+font-weight: 600;
+color: #fff;
+font-size: 21px;
+}
+
+.copyRightArea {
+margin-top: 83px;
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+padding: 25px 0px 28px;
+}
+
+.copyRightArea p {
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-wrapper{
+    height: 70vh auto;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.about-left{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #d6c5df 100%);
+    display: flex;
+    flex-direction: grid;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    color:#fff;
+    margin-right: 10px;
+}
+.about-left-content > div{
+    background: #12192c;
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+.about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    border-radius: 12px;
+    width:80%;
+}
+.about-img img{
+    display: block;
+    width: 200px;
+}
+.about-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.about-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #B721FF;
+}
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+.icons{
+    background: #12192c;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 12px 12px;
+}
+.icons li{
+    list-style-type: none;
+    background: #ffffff;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover{
+    background: #000000;
+    color: #ffffff;
+}
+.about-right{
+    background: #09363b;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    color:#fff
+}
+.about-right h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.about-right h1 span{
+    color: #ffffff;
+}
+.about-right h2{
+    font-weight: 600;
+}
+.about-btns{
+    display: flex;
+    margin: 2rem 0;
+}
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color:#000000
+}
+.btn.btn-pink{
+    background: #f8f8f8;
+    color: #000000;
+    border-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-pink:hover{
+    background: black;
+    border-color: #000000;
+    color: #ffffff;
+}
+.btn.btn-white{
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-white:hover{
+    background: #000000;
+    border-color: #fcf7ff;
+    color: #fff;
+}
+.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .about-left{
+        position: relative;
+    }
+    .about-left-content{
+        position: absolute;
+        width:80%
+    
+    }
+}
+        </style>
+</head>
+    <body>
+      <div class="navbar navbar-inverse" style="margin: 0; border-radius: 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="index.html" class="navbar-brand"><img src="sakibsit.png" alt="" style="height: 35px;"></a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Android</a></li>
+                                    <li><a href="#">Apps & Software</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Custom ROM</a></li>
+                                    <li><a href="#">Data Recovery</a></li>
+                                    <li><a href="#">Website Templates</a></li>
+                                    <li><a href="#">Windows</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <form action="" class="navbar-form">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="search" name="search" id="" placeholder="Search Anything Here..." class="form-control">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user">Profile</span></a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="registration.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="title"><span>Sakib Hasan</span><span>IT Specialist and<a target="_blanck" href="salfia.com">Web Developer</a></span></div>
+      </section>
+
+      <div class="contain">
+        <h1>Our Services</h1>
+        <div class="row1">
+          <div class="service">
+            <i class="fas fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Professional Website Development program. We'll develop your Website professionally.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-check"></i>
+            <h2>Cyber Security</h2>
+            <p>
+              Keep your digital data secure
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-database"></i>
+            <h2>Data Recovery</h2>
+            <p>
+              Recover your deteled data easily
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-mobile"></i>
+            <h2>Android Custom ROM</h2>
+            <p>
+              Download any Custom ROM (Professional ROM). No risk. 100% safe & secure.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-lock-open"></i>
+            <h2>Unlock forgotten Password</h2>
+            <p>
+              Unlock any device while you unfortunately forgot Pin or Pattern without Data Lose.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-download"></i>
+            <h2>Apps & Software</h2>
+            <p>
+              Download Mobile Application & Windows Software for free.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--About-->
+      <div class = "about-wrapper">
+        <div class = "about-left">
+          <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "sohel.jpg" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>Sakib Hasan</h2>
+              <h3>Founder & CEO</h3>
+              <p>IT Specialist & Web Developer</p>
+            </div>
+  
+            <ul class = "icons">
+              <li><i class = "fab fa-facebook-f"></i></li>
+              <li><i class = "fab fa-linkedin"></i></li>
+              <li><i class = "fab fa-instagram"></i></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class = "about-right">
+            <h1>About Me<span>!</span></h1>
+            <h2>Here's who I am & what I do</h2>
+            <div class = "about-btns">
+              <button type = "button" class = "btn btn-pink">resume / CV</button>
+              <button type = "button" class = "btn btn-white">Git hub</button>
+            </div>
+    
+            <div class = "about-para">
+              <p>I'm a Professional IT Specialist & Web Developer. I'm working about 3years on this sector. So, I've gained strong skills to solve the IT problem & to develop a Professional Website.</p>
+              <p>I've completed Graduation from Department of English Language & Literature, Dhaka College, Dhaka.</p>
+            </div>
+          </div>
+        </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="widget1">
+                        <div class="logo">
+                            <img src="sakibsit.png" class="img-fluid" alt="">
+                        </div>
+                        <p>
+                            A dedicated IT consultant in Bogura, Bangladesh. We are providing a couple of service to make IT easier and faster to use. <br> Professiona Website, Search Engine Optimization, Cyber Related Issues & Different kinds of Data Recovery is our main goal. We are here to give you all the services at low cost & faster than others.
+                        </p>
+                        <div class="socialLinks">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="widget2">
+                        <h5>
+                            Latest News
+                        </h5>
+                        <div class="media">
+                            <img class="img-fluid" src="Ransomware.webp" alt="">
+                            <div class="media-body d-flex align-self-center">
+                                <div class="content">
+                                    <a href="#">
+                                        <p>
+                                                Ransomware Data Recovery methods
+                                        </p>
+                                    </a>
+                                    <span>
+                                        Aug 17, 2023
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="img-fluid" src="cyber.jpg" alt="">
+                            <div class="media-body d-flex align-self-center">
+                                <div class="content">
+                                    <a href="#">
+                                        <p>
+                                                Learn Basic of Cyber Security
+                                        </p>
+                                    </a>
+                                    <span>
+                                        Aug 17, 2023
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="widget3">
+                        <h5>
+                            Quick Links
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Privecy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Skills test
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="widget4">
+                        <h5>
+                            Other Links
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    themeforest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FreeCodeCamp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Fiverr
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Codepen
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Cyber Unit, DMP
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightArea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; Copyright All rights reserved 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
